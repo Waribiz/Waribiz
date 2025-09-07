@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waribiz - Plateforme de Formations Digitales</title>
+    
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS - Animate On Scroll -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Polices futuristes -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand neon-text" href="#">
+                <img src="assets/img/waribiz_logo.png" alt="Waribiz" height="40" class="me-2">
+                Waribiz
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link neon-hover" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link neon-hover" href="#formations">Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link neon-hover" href="#parrainage">Parrainage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link neon-hover" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-neon-primary ms-2" href="#connexion">
+                            <i class="fas fa-sign-in-alt me-2"></i>Connexion
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="hero-title neon-text">
+                        Transformez votre avenir avec 
+                        <span class="typed-text"></span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Découvrez notre plateforme de formations digitales sécurisée avec système de parrainage intégré. 
+                        Accédez à des contenus exclusifs et développez vos compétences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#formations" class="btn btn-neon-primary btn-lg me-3">
+                            <i class="fas fa-play me-2"></i>Découvrir les formations
+                        </a>
+                        <a href="#parrainage" class="btn btn-neon-secondary btn-lg">
+                            <i class="fas fa-users me-2"></i>Programme de parrainage
+                        </a>
+                    </div>
+                    <div class="hero-stats mt-5">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <div class="stat-number neon-text" data-count="1000">0</div>
+                                    <div class="stat-label">Étudiants</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <div class="stat-number neon-text" data-count="50">0</div>
+                                    <div class="stat-label">Formations</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <div class="stat-number neon-text" data-count="95">0</div>
+                                    <div class="stat-label">% Satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-visual">
+                        <div class="floating-card glass-card">
+                            <i class="fas fa-graduation-cap neon-icon"></i>
+                            <h4>Formations Premium</h4>
+                            <p>Accès illimité aux contenus exclusifs</p>
+                        </div>
+                        <div class="floating-card glass-card">
+                            <i class="fas fa-shield-alt neon-icon"></i>
+                            <h4>Sécurité Garantie</h4>
+                            <p>Protection avancée de vos données</p>
+                        </div>
+                        <div class="floating-card glass-card">
+                            <i class="fas fa-money-bill-wave neon-icon"></i>
+                            <h4>Commissions</h4>
+                            <p>Jusqu'à 15% de commission</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formations Section -->
+    <section id="formations" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title neon-text">Nos Formations</h2>
+                    <p class="section-subtitle">Découvrez notre catalogue de formations digitales</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="formation-card glass-card">
+                        <div class="card-header">
+                            <i class="fas fa-code neon-icon"></i>
+                            <span class="badge badge-neon">Développement</span>
+                        </div>
+                        <div class="card-body">
+                            <h4>Développement Web Avancé</h4>
+                            <p>Maîtrisez les technologies modernes du web</p>
+                            <div class="progress-container">
+                                <div class="progress neon-progress">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                </div>
+                                <span class="progress-text">0% complété</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price neon-text">299€</span>
+                                <a href="#" class="btn btn-neon-primary">
+                                    <i class="fas fa-shopping-cart me-2"></i>Acheter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="formation-card glass-card">
+                        <div class="card-header">
+                            <i class="fas fa-chart-line neon-icon"></i>
+                            <span class="badge badge-neon">Marketing</span>
+                        </div>
+                        <div class="card-body">
+                            <h4>Marketing Digital</h4>
+                            <p>Stratégies avancées de marketing en ligne</p>
+                            <div class="progress-container">
+                                <div class="progress neon-progress">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                </div>
+                                <span class="progress-text">0% complété</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price neon-text">199€</span>
+                                <a href="#" class="btn btn-neon-primary">
+                                    <i class="fas fa-shopping-cart me-2"></i>Acheter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="formation-card glass-card">
+                        <div class="card-header">
+                            <i class="fas fa-brain neon-icon"></i>
+                            <span class="badge badge-neon">IA</span>
+                        </div>
+                        <div class="card-body">
+                            <h4>Intelligence Artificielle</h4>
+                            <p>Découvrez les secrets de l'IA moderne</p>
+                            <div class="progress-container">
+                                <div class="progress neon-progress">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                </div>
+                                <span class="progress-text">0% complété</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price neon-text">399€</span>
+                                <a href="#" class="btn btn-neon-primary">
+                                    <i class="fas fa-shopping-cart me-2"></i>Acheter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parrainage Section -->
+    <section id="parrainage" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="section-title neon-text">Programme de Parrainage</h2>
+                    <p class="section-subtitle">Gagnez des commissions en parrainant vos amis</p>
+                    <div class="commission-info">
+                        <div class="commission-item">
+                            <div class="commission-icon">
+                                <i class="fas fa-percentage neon-icon"></i>
+                            </div>
+                            <div class="commission-content">
+                                <h4>15% Commission Directe</h4>
+                                <p>Sur l'achat immédiat de votre filleul</p>
+                            </div>
+                        </div>
+                        <div class="commission-item">
+                            <div class="commission-icon">
+                                <i class="fas fa-sync-alt neon-icon"></i>
+                            </div>
+                            <div class="commission-content">
+                                <h4>10% Commission Récurrente</h4>
+                                <p>Sur tous les futurs achats de votre filleul</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-neon-secondary btn-lg">
+                        <i class="fas fa-link me-2"></i>Obtenir mon lien de parrainage
+                    </a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="parrainage-visual">
+                        <div class="network-diagram">
+                            <div class="node main-node">
+                                <i class="fas fa-user neon-icon"></i>
+                                <span>Vous</span>
+                            </div>
+                            <div class="node child-node">
+                                <i class="fas fa-user-friends neon-icon"></i>
+                                <span>Filleuls</span>
+                            </div>
+                            <div class="connection-line"></div>
+                            <div class="commission-flow">
+                                <i class="fas fa-coins neon-icon"></i>
+                                <span>Commissions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title neon-text">Contactez-nous</h2>
+                    <p class="section-subtitle">Une question ? Nous sommes là pour vous aider</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="contact-form glass-card" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nom" class="form-label">Nom</label>
+                                <input type="text" class="form-control neon-input" id="nom" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control neon-input" id="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sujet" class="form-label">Sujet</label>
+                            <input type="text" class="form-control neon-input" id="sujet" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control neon-input" id="message" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-neon-primary btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Envoyer le message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-card">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="assets/img/waribiz_logo.png" alt="Waribiz" height="40" class="mb-3">
+                        <p>Plateforme de formations digitales sécurisée avec système de parrainage intégré.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="neon-text">Liens rapides</h5>
+                    <ul class="footer-links">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#formations">Formations</a></li>
+                        <li><a href="#parrainage">Parrainage</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="neon-text">Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Aide</a></li>
+                        <li><a href="#">Conditions</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="neon-text">Suivez-nous</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="neon-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 Waribiz. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap 5.3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS - Animate On Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
